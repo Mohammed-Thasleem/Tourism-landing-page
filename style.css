@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+#sidebarmenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 25%;
+    margin-top: 75px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background-color: rgba(1,1,1,0.4)
+  }
+
+  #openSidebarMenu {
+    height: 100%;
+    width: 100%;
+  }
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 15px;
+    left: 10px;
+    height: 18px;
+    width: 18px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #175919;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.header__name {
+    text-align: center;
+    color: #175919;
+    font-size: 2.5rem;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 500;
+}
+
+.navigation__nav {
+    display: none;
+}
+
+.section__main-content {
+    background-image: url(/img/bg-img-large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 6rem;
+}
+
