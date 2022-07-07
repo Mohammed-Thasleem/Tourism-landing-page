@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Source Serif Pro', serif;
 }
 
 body {
@@ -85,10 +86,147 @@ body {
     display: none;
 }
 
-.section__main-content {
-    background-image: url(/img/bg-img-large.jpg);
+.section__main-container {
+    background-image: url(/img/bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10rem 6rem;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .section__main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    max-width: 800px;
+    font-weight: 300;
+  }
+
+.content__heading {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
 }
+
+.btn__main {
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  font-family: 'Source Serif Pro', serif;
+  margin-top: 2rem;
+  color: #3A3C42;
+  width: 16rem;
+  font-weight: 600;
+}
+
+.form__main {
+  margin: 1.5rem;
+  padding: 1rem;
+  background-color: #F7F8E2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 45vh;
+}
+
+.form__heading {
+  color: #3A3C42;
+  text-align: center;
+}
+
+.form__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 90%; 
+  max-width: 250px;
+}
+
+.form__details input {
+  padding: .5rem;
+  border: none;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  outline: none;
+}
+
+.trip__timing-container {
+  display: flex;
+  /* width: 200px; */
+  justify-content: space-between;
+  width: 250px;
+  height: 45px;
+  /* padding: 0 1rem; */
+}
+
+.trip__timing {
+  /* width: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.date__section {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.date {
+  display: flex;
+  width: 70px;
+}
+
+.time {
+  display: flex;
+}
+
+.img-calender,
+.img-clock {
+  margin-right: 3px;
+  width: 10px;
+}
+
+.journey-type {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+#journeytype {
+  margin-right: -15px;
+}
+
+#personnumber {
+  border: none;
+  font-size: 1.1rem;
+  text-align: start;
+  color: #3A3C42;
+  font-family: 'Source Serif Pro', serif;
+  outline: none;
+}
+
+
+.btn__form {
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  font-family: 'Source Serif Pro', serif;
+  color: #fff;
+  background-color: #175919;
+  width: 16rem;
+  font-weight: 600;
+}
+
 

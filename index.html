@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Source+Serif+Pro:wght@300;400&display=swap" 
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&family=Source+Serif+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Go Pro</title>
@@ -65,9 +67,11 @@
     </section>
 
     <section class="section__main">
-      <div class="section__main-content">
-        <h1 class="content__heading">Discover the secrets of the Earth</h1>
-        <button class="btn__main">Plan your trip</button>
+      <div class="section__main-container">
+        <div class="section__main-content">
+          <h1 class="content__heading">Discover the secrets of the Earth</h1>
+          <button class="btn__main">Plan your trip</button>
+        </div>
       </div>
       <div class="form__main">
         <h2 class="form__heading">Start now</h2>
@@ -82,33 +86,35 @@
           />
           <label for="email"></label>
         </div>
+      <div class="trip__timing-container">
         <div class="trip__timing">
           <p>Departure Date</p>
           <div class="date__section">
             <div class="date">
-              <img src="img/calendar.svg" alt="Calender" />
+              <img src="img/calendar.svg" alt="Calender" class="img-calender"/>
               <p>Mon 05/12</p>
             </div>
             <div class="time">
-              <img src="img/clock.svg" alt="Clock" />
+              <img src="img/clock.svg" alt="Clock" class="img-clock"/>
               <p>10:00</p>
             </div>
           </div>
         </div>
-        
+
         <div class="trip__timing">
           <p>Arrival Date</p>
           <div class="date__section">
             <div class="date">
-              <img src="img/calendar.svg" alt="Calender" />
+              <img src="img/calendar.svg" alt="Calender" class="img-calender"/>
               <p>Mon 05/12</p>
             </div>
             <div class="time">
-              <img src="img/clock.svg" alt="Clock" />
+              <img src="img/clock.svg" alt="Clock" class="img-clock"/>
               <p>10:00</p>
             </div>
           </div>
         </div>
+      </div>
         <div class="journey-type">
           <input type="checkbox" id="journeytype" />
           <label for="journeytype">Round trip</label>
@@ -118,7 +124,9 @@
           <label for="journeytype">Multidestination</label>
         </div>
         <div class="person__num">
-          <textarea name="personnumber" id="personnumber" cols="30" rows="3">How many persons?</textarea>
+          <textarea name="personnumber" id="personnumber" cols="30" rows="3">
+            How many persons?
+          </textarea>
         </div>
         <button class="btn__form">Book now</button>
       </div>
